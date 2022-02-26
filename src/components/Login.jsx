@@ -1,18 +1,23 @@
 import "./styles/login.css";
-import { Link ,useNavigate} from "react-router-dom";
+import { Link ,useNavigate,Navigate} from "react-router-dom";
  import { FaFacebookSquare } from "react-icons/fa"
-import { useState } from "react";
+import { useState,useContext } from "react";
+import Box from '@mui/material/Box';
+import LinearProgress from '@mui/material/LinearProgress';
+import {AuthProvider} from '../Context/AuthContextProvider'
 
 export const Login = () =>{
     const nav=useNavigate()
+    const {handle}=useContext(AuthProvider)
     const initData = {username : "",password : ""};
     const [signedInData, setSignedInData] = useState(initData);
-
+    const [loading,setloading]=useState(false)
     const handleChange = (e) => {
         const {name,value} = e.target;
         setSignedInData({...signedInData, [name] : value});
     }
     const HandleSignIn = () => {
+        setloading(true)
         fetch("https://instagrambackendd.herokuapp.com/signin", {
             method:"POST",
             headers:{
@@ -21,13 +26,28 @@ export const Login = () =>{
             body:JSON.stringify(signedInData)
         }).then(res=> res.json()).
         then((data) => {
-            console.log(data.user._id)
             if(data.message=='Either username or password incorrect') {
                 alert('Either username or password incorrect')
-             } else {
+                setloading(false)
+             }
+             if(data.error){
+                alert('Either username or password incorrect')
+                setloading(false)
+             }
+              else {
+                  localStorage.setItem("UserD",JSON.stringify(data))
                  localStorage.setItem("user_id",data.user._id)
+                 
+                 handle(true)
+                 localStorage.setItem("Auth",true)
+                 setloading(false)
                  alert('Account Successfuly created please signin')
                  nav('/home')
+
+                //  setTimeout(()=>{
+                //    
+                //  },1000)
+                 
            
              }     
         }
@@ -36,7 +56,9 @@ export const Login = () =>{
         })
     }
 
-    return (
+    return loading? <Box sx={{ width: '100%' }}>
+    <LinearProgress />
+  </Box>: (
         <>
             <div id="container">
                 <div id="container_1"><img src="https://i.ibb.co/D9YG1XW/LoginImg.png"/></div>

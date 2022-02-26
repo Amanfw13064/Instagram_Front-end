@@ -5,6 +5,8 @@ import "./UploadPopup.css"
 import Upload from "./UploadPopupBox";
 import Picker from 'emoji-picker-react';
 import { FaGrinAlt } from 'react-icons/fa';
+// import { EmojisFn } from './EmojiFile';
+
 //import { EmojisFn } from './EmojiFile';
 import { AiOutlinePlusSquare } from "react-icons/ai"
 import Box from '@mui/material/Box';
@@ -53,7 +55,7 @@ const handleSubmit = () =>{
   data.append('picture',file)
   data.append('title',text)
   data.append('user_id',user_id)
-  fetch('http://localhost:5000/post',{
+  fetch('https://instagrambackendd.herokuapp.com/post',{
     method:"POST",
     body:data,
   }).then(res=>res.json()).then(data=>{

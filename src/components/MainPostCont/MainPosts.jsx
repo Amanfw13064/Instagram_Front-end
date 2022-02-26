@@ -9,7 +9,7 @@ export const MainPosts=()=>{
    getPost()
  },[])
  const getPost=()=>{
-       axios.get('http://localhost:5000/post').then(({data})=>{
+       axios.get('https://instagrambackendd.herokuapp.com/post').then(({data})=>{
          setPost(data)
        })
  }
