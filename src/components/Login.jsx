@@ -26,7 +26,7 @@ export const Login = () =>{
                 alert('Either username or password incorrect')
              } else {
                  localStorage.setItem("user_id",data.user._id)
-                 alert('Account Successfuly created please sigin')
+                 alert('Account Successfuly created please signin')
                  nav('/home')
            
              }     
