@@ -53,7 +53,7 @@ img {
 /* Profile Section */
 
 .profile {
-  padding: 2rem 0;
+  padding: 1rem 0 4rem 0;
 }
 
 .profile::after {
@@ -98,13 +98,14 @@ img {
   line-height: 1.8;
   border: 0.1rem solid #dbdbdb;
   border-radius: 0.3rem;
-  padding: 0 2rem;
+  padding:  0.2rem 0.5rem;
   margin-left: 2rem;
 }
 
 .profile-settings-btn {
-  font-size: 2rem;
-  margin-left: 1rem;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .profile-stats {
@@ -133,10 +134,24 @@ img {
 .profile-real-name,
 .profile-stat-count,
 .profile-edit-btn {
-  font-weight: 600;
+  font-weight: 500;
   color: rgb(77, 76, 76);
+  
 }
 
+.profile-stat-count{
+  font-size: 16px;
+}
+
+/* .profile-real-name{
+  
+  margin-top: 2%;
+ 
+} */
+
+#probio{
+  margin-top: 2%;
+}
 /* Gallery Section */
 
 .gallery {
@@ -378,3 +393,12 @@ img {
     display: none;
   }
 } */
+
+  .fallowTitle{
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+color: #262626;
+
+
+  }
