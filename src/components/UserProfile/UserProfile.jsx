@@ -8,7 +8,6 @@ import { BiBadge } from "react-icons/bi"
 import { FaRegBookmark } from 'react-icons/fa';
 import { BiGrid } from "react-icons/bi";
 import { BiUserPin } from "react-icons/bi";
-import { BiBookAlt } from "react-icons/bi";
 import axios from 'axios'
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -31,7 +30,6 @@ export const ProfileFinal = () => {
   const [isOpenFallowing, setIsOpenFallowing] = useState(false);
   const [isOpenFallower, setIsOpenFallower] = useState(false);
   const [loading,setloading]=useState(true)
-  const [userPost,setuserPost]=useState()
    const ref=useRef()
   const toggleFollowers = () => {
     setIsOpenFallower(!isOpenFallower);
@@ -45,14 +43,14 @@ export const ProfileFinal = () => {
   },[])
   
      const getData=()=>{
-      axios.get(`http://localhost:5000/user/${user_id}`).then(({data})=>{
+      axios.get(`https://instagrambackendd.herokuapp.com/user/${user_id}`).then(({data})=>{
         setdata(data)
        
       }) 
      }
      var user_post=[]
   const getPost=()=>{
-    axios.get('http://localhost:5000/post').then(({data})=>{
+    axios.get('https://instagrambackendd.herokuapp.com/post').then(({data})=>{
          for(let i=0;i<data.length;i++){
                if(data[i].user_id._id===user_id){
                 user_post.push(data[i])
@@ -64,10 +62,19 @@ export const ProfileFinal = () => {
         console.log("use",ref.current)   
     }) 
   }
-
-  // if(i==2){
-  //   setloading(false)
-  // }
+  const makeunfollow=(_id)=>{
+    axios.patch(`https://instagrambackendd.herokuapp.com/user/${user_id}/unfollowing`,{
+      following:_id
+    }).then(({data})=>{
+      console.log(data)
+    })
+    axios.patch(`https://instagrambackendd.herokuapp.com/user/${_id}/unfollower`,{
+      follower:user_id
+    }).then(({data})=>{
+      console.log(data)
+     
+    })
+ }
   const timeout=()=>{
    setTimeout(()=>{
       setloading(false)
@@ -158,7 +165,9 @@ export const ProfileFinal = () => {
         <p>{e.username}</p>
         </div>
         <div>
-            <button class="fallowBtn">Fallowing</button>
+            <button class="fallowBtn" onClick={()=>{
+              makeunfollow(e._id)
+            }} >unfollow</button>
         </div>
     </div>
     ))}

@@ -4,6 +4,7 @@
     border: 1px solid #dbdbdb;
     background-color: white;
     margin-top: 25px;
+    font-size: 13px;
 }
 .post-header{
     height: 60px;
@@ -22,6 +23,7 @@
 .post-username{
     font-weight: bold;
     margin-top: 20px;
+    font-size: 17px;
     
 }
 .Three-para{
@@ -33,7 +35,7 @@
 .post-comment{
   
     margin: 10px;
-
+   display: flex;
  
 
 }

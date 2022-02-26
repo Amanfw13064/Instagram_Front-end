@@ -87,7 +87,7 @@ console.log("profile",user_profile)
     color: red[800],
     '&.Mui-checked': {
       color: red[600],
-    },
+    },'& .MuiSvgIcon-root': { fontSize: 28 }
   }}  icon={<FavoriteBorder />} checkedIcon={<Favorite />} />:    <Checkbox onClick={()=>{
     if(lik===true){
       Makelikes(id)
@@ -97,12 +97,12 @@ console.log("profile",user_profile)
       
     }
 }} {...label} 
-defaultChecked
+defaultChecked 
 sx={{
 color: red[800],
 '&.Mui-checked': {
 color: red[600],
-},
+},'& .MuiSvgIcon-root': { fontSize: 28 }
 }}  icon={<FavoriteBorder />} checkedIcon={<Favorite />} />}
                
                <img className="Three-para" src={comment} />
@@ -121,7 +121,7 @@ color: red[600],
          {/* Comments section */}
         { 
         postedBy.map((e,i)=>(
-             <div className="post-comment" >{commentPost[i]}--by{e.name}</div>    
+             <div className="post-comment" ><Avatar className="post-userlogo" src={e.profile_pic} /><h3 style={{marginTop:"20px",color:"blue"}}>{e.name}</h3> <h3 style={{margin:"20px"}}>{commentPost[i]}</h3></div>    
         )
         )}    
             <input className="post-comment-input" onChange={(e)=>{

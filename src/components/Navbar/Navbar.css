@@ -11,6 +11,12 @@
 .navbar-img{
     margin: 15px 10px;
 }
+.log{
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+}
 
 .nav-searchbar{
     height:30px;

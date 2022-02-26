@@ -1,5 +1,5 @@
 import {Grid, Avatar} from "@mui/material"
-import ScrollToBottom from 'react-scroll-to-bottom';
+// import ScrollToBottom from 'react-scroll-to-bottom';
 import "./LiveChat.css"
 import heart from'../../images/heart.png'
 import smile from'../../images/smile.png'
@@ -11,7 +11,7 @@ export const LiveChat=()=>{
    const [yourID, setYourID] = useState();
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
-   const arr=[1,2,3]
+  //  const arr=[1,2,3]
   const socketRef = useRef();
 
 
@@ -25,8 +25,6 @@ export const LiveChat=()=>{
     socketRef.current.on("your id", id => {
       setYourID(id);
 
-   
-    //   console.log(visible)
     },[messages])
     
     socketRef.current.on("message", (message) => {
