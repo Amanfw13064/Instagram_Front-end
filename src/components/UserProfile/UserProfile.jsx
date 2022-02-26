@@ -116,29 +116,37 @@ export const ProfileFinal = () => {
             <div className="profile-stats">
               <ul>
                 <li>
-                  <span className="profile-stat-count"> {ref.current.user_post.length}</span> posts 
+                  <span className="profile-stat-count"> {ref.current.user_post.length} posts </span> 
                 </li>
                 <li>
-                <Button  onClick={toggleFollowers} ><span className="profile-stat-count">{data.follower.length}</span> followers  </Button>
+                <Button  onClick={toggleFollowers} ><span className="profile-stat-count">{data.follower.length} followers </span>  </Button>
                 </li>
 
                 
    
    {isOpenFallower && <Popup
      content={<>
-       <h3 style={{textAlign: "center"}}>Followers</h3>
-       <hr color="	#DCDCDC"/>
+       <h3 className="fallowTitle">Followers</h3>
+       <div className="line"></div>
+       
      {data.follower.map(e=>(
        <div style={{display:"flex" ,justifyContent:"space-between" , margin:"1.3rem 0"}}>
        <div>
            <img style={{width:"40px",height:"40px",borderRadius:"80px"}} src={e.profile_pic} alt=""/> 
           
        </div>
+       
        <div>
-       <p>{e.username}</p>
+       <p className="username">{e.username}</p>
        </div>
        <div>
-           <button class="fallowBtn">Fallow</button>
+
+       </div>
+       <div>
+
+       </div>
+       <div>
+           <button className="fallowBtn">Fallow</button>
        </div>
    </div>
      ))}
@@ -148,12 +156,16 @@ export const ProfileFinal = () => {
    />}
 
                 <li>
-                <Button  onClick={toggleFollowing} > <span className="profile-stat-count">{data.following.length}</span> following </Button>
+                <Button  onClick={toggleFollowing} > <span className="profile-stat-count">{data.following.length} following</span>  </Button>
                 </li>
    {isOpenFallowing && <Popup
      content={<>
-       <h3 style={{textAlign: "center"}}>Following</h3>
-       <hr color="	#DCDCDC"/>
+      
+       <p className="fallowTitle">Following</p>
+       <div class="line"></div>
+       {/* <hr color="#DCDCDC"/> */}
+      
+       <br/> 
     {data.following.map(e=>(
         <div style={{display:"flex" ,justifyContent:"space-between" , margin:"1.3rem 0"}}>
         <div>
@@ -161,7 +173,13 @@ export const ProfileFinal = () => {
            
         </div>
         <div>
-        <p>{e.username}</p>
+        <p className="username">{e.username}</p>
+        </div>
+        <div>
+
+        </div>
+        <div>
+
         </div>
         <div>
             <button class="fallowBtn" onClick={()=>{
@@ -180,30 +198,29 @@ export const ProfileFinal = () => {
 
             <div className="profile-bio">
               <p>
-                <span className="profile-real-name">{data.name}</span> 
-                <br />
-                Life on weels 📷✈️🏕️
+                <span className="profile-real-name">{data.name} </span> 
+               
+               <div id="probio">  Life on weels 📷✈️🏕️ </div>
               </p>
             </div>
           </div>
         </div>
       </header>
-      
-<hr width="67%" color="	#DCDCDC"/>
+      <div id="lineNav"></div>
+
       <div>
 
       <nav className="navigation-bar">
   <ul className="nav-item">
     <li className="item">
         {/* <BsFillGrid3X3GapFill />   */}
-        <BiGrid />     POSTS
-       
+        <BiGrid className="navIcon"/>    <span className="navText">  POSTS </span>
     </li>
     <li className="item">
-    <FaRegBookmark />    SAVED
+    <FaRegBookmark className="navIcon"/>   <span className="navText"> SAVED </span>
     </li>
     <li className="item" >
-       <BiUserPin />     TAGGED
+       <BiUserPin className="navIcon"/>    <span className="navText">  TAGGED </span>
     </li>
   </ul>
 </nav>
