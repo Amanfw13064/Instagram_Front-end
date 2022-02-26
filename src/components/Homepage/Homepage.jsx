@@ -12,11 +12,12 @@ class Home extends Component{
 
    }
    render(){
-       return (
+       return (<>
+        <Navbar/>
           <div>
-   <Content/>
-          
+            <Content/>
           </div>
+       </>
        )
    }
 
