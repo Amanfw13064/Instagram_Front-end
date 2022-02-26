@@ -1,0 +1,31 @@
+.story-section{
+  height: 120px;
+  width: 615px;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  margin-top: 25px;
+  display: flex;
+  overflow: scroll;
+
+ 
+}
+.story-section::-webkit-scrollbar{
+
+display: none;
+
+}
+.story-logo{
+    min-width: 55px;
+    min-height: 55px;
+    border: 3px solid #df3968;
+}
+.story-div{
+    margin: 25px 15px;
+    
+}
+.story-text{
+    font-size: 12px;
+    max-width: 50px;
+    overflow: hidden;
+    text-align: center;
+}

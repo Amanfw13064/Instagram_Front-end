@@ -1,0 +1,23 @@
+.navbar_content{
+
+    height: 54px;
+    background-color: white;
+    border-bottom:1px solid #dbdbdb  ;
+   
+}
+.insta-logo{
+    margin-top: 10px;
+}
+.navbar-img{
+    margin: 15px 10px;
+}
+
+.nav-searchbar{
+    height:30px;
+    width: 215px;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius:5px ;
+}

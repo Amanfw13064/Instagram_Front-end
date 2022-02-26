@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+}
+
+#container {
+  display: flex;
+  gap: 10%;
+  margin: auto;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: 3%;
+  /* border: 1px solid teal; */
+  width: 63%;
+}
+
+#container_1 {
+  /* border: 1px solid black; */
+  width: 35%;
+  height: 550px;
+ margin-right: 41px;
+}
+
+#container_2 {
+  /* border: 1px solid black; */
+  width: 30%;
+  height: 550px;
+  background-color: #ffffff;
+}
+#container_1 img {
+  width: 420px;
+  height: 560px;
+}
+
+#container_2_1 {
+  border: 0.5px solid #dfdfdf;
+  min-width: 110%;
+  height: 370px;
+}
+#container_2_2 {
+  border: 0.5px solid #dfdfdf;
+  width: 110%;
+  height: 70px;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  gap: 2%;
+}
+#container_2_3 {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100px;
+}
+#container_2_1 img {
+  width: 180px;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#container_2_1 input {
+  width: 90%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #fafafa;
+  border: none;
+  border: 1px solid gainsboro;
+}
+#container_2_1 button {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  background-color: #b2dffc;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+#container_2_1 h5 {
+  color: #385185;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+#container_2_1 p {
+  font-size: 12px;
+}
+#container_2_2 > p {
+  margin-top: 5.5%;
+  margin-left: 15%;
+}
+#signUpLink {
+  color: #3bb3fd;
+  margin-top: 42%;
+  text-decoration: none;
+}
+
+#container_2_3 p {
+  margin-top: 10px;
+}
+
+#container_2_3 img {
+  width: 140px;
+  height: 45px;
+  /* gap: 15px; */
+  margin-top: 10px;
+  cursor: pointer;
+  white-space: pre;
+}
+
+#footerLogin {
+  margin-top: 4%;
+  width: 55%;
+  /* display: flex; */
+}
+#footerLogin p {
+  font-size: 13px;
+  color: gray;
+  line-height: 25px;
+  white-space: pre;
+}
+#loginP1{
+  margin-left: 52%;
+}
+#loginP2{
+  margin-left: 70%;
+}
+@media screen and (min-width : 401px) and (max-width : 760px) {
+  #container_1 {
+    display: none;
+  }
+  #container_2{
+    width: 60%;
+  }
+  #loginP1{
+    margin-left: 35%;
+  }
+  #loginP2{
+    margin-left: 65%;
+  }
+  #footerLogin{
+    width: 30%;
+    margin-top: 10%;
+  }
+}
+@media screen and (min-width : 0px) and (max-width : 400px){
+  #container_1 {
+    display: none;
+  }
+  #container_2{
+    width: 100%;
+    height: 650px;
+    margin-left: 10%;
+  }
+  #footerLogin{
+    width: 100%;
+  }
+  #loginP1{
+    margin-left: 15%;
+  }
+  #loginP2{
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width : 760px) and (max-width : 1150px) {
+  #container {
+    width: 90%;
+  }
+}

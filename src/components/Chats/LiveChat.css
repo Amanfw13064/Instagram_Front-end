@@ -1,0 +1,70 @@
+
+
+.live-chat-header{
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    height: 65px;
+    width: 100%;
+}
+.chat-header-logo{
+    margin: 10px;
+    
+   
+
+}
+.chat-header-username{
+    margin: 18px;
+    font-weight: bold;
+
+}
+.real-time-chatbox{
+    height: 450px;
+    border: 1px solid green;
+    overflow-y: auto;
+
+}
+
+.live-chat-input{
+    border: 1px solid red;
+    height: 100px;
+}
+
+.chat-input-logo{
+    margin-left: 12%;
+    width: 25px;
+    margin: 10px;
+}
+
+.input-box{
+    border: none;
+    
+    width: 98%;
+    height: 38px;
+    outline: none;
+}
+
+.mainContainer{
+    margin-top: 25px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    border-radius: 16px;
+    width: 95%;
+    height: 45px;
+    margin-left: 2.5%;
+}
+.message {
+    width: 25%;
+    background-color:#dbdbdb ;
+    border-radius:13px;
+    padding: 10px;
+    margin: 7px;
+}
+.right{
+    float: right;
+    clear: both;
+
+}
+.left{
+    float: left;
+    clear: both;
+}

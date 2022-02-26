@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+}
+#container_3 {
+  /* border: 1px solid black; */
+  width: 23%;
+  height: 700px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 37%;
+}
+#container_3_1 {
+  border: 1px solid #dfdfdf;
+  width: 100%;
+  height: 530px;
+}
+#container_3_2 {
+  border: 1px solid #dfdfdf;
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+  text-align: center;
+}
+#container_3_3 {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100px;
+}
+#container_3_1 img {
+  width: 180px;
+  height: 70px;
+  margin-top: 20px;
+}
+#fbBtn {
+  background-color: #0095f6;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  width: 90%;
+  height: 30px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+#container_3_1 input {
+  width: 90%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #fafafa;
+  border: none;
+  border: 1px solid gainsboro;
+}
+/* #container_2_1 button {
+    width: 270px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+    background-color: #b2dffc;
+    border: none;
+    color: white;
+    font-weight: 600;
+  } */
+#signupBtn {
+  width: 90%;
+  height: 30px;
+  margin-bottom: 15px;
+  margin-top: 8px;
+  background-color: #b2dffc;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+#container_3_1 h4 {
+  color: #8e8e8e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+#container_3_1 p {
+  font-size: 12px;
+}
+#container_3_1 h6 {
+  color: #8e8e8e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 15px;
+}
+
+#container_3_2 p {
+  margin-top: 10px;
+}
+#container_3_2 h5 {
+  color: #48b5f9;
+}
+
+#container_3_3 p {
+  margin-top: 10px;
+}
+
+#container_3_3 img {
+  width: 140px;
+  height: 45px;
+  /* gap: 15px; */
+  margin-top: 15px;
+  cursor: pointer;
+  white-space: pre;
+}
+#footer {
+  margin-top: 4%;
+  width: 55%;
+  /* display: flex; */
+}
+#footer p {
+  font-size: 13px;
+  color: gray;
+  line-height: 25px;
+  white-space: pre;
+}
+#signupP1{
+  margin-left: 52%;
+}
+#signupP2{
+  margin-left: 70%;
+}
+a{
+  text-decoration: none;
+}
