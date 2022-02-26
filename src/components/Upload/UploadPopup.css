@@ -107,17 +107,26 @@
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   border-radius: 10px;
-}
+} */
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(168, 167, 167);
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #868686;
+}
+
+#createPost {
+  align-items: center;
+  text-align: center;
+  color: #282828;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 2%;
 }

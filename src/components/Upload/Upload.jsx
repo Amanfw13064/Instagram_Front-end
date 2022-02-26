@@ -5,7 +5,7 @@ import "./UploadPopup.css"
 import Upload from "./UploadPopupBox";
 import Picker from 'emoji-picker-react';
 import { FaGrinAlt } from 'react-icons/fa';
-import { EmojisFn } from './EmojiFile';
+//import { EmojisFn } from './EmojiFile';
 import { AiOutlinePlusSquare } from "react-icons/ai"
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
@@ -76,7 +76,7 @@ const handleSubmit = () =>{
    
    {isOpenUpload && <Upload
      content={<>
-       <div>  <h2 style={{textAlign: "center", color:"#282828", fontWeight:"500", width:"100"}}>Create new post</h2>
+       <div>  <p id="createPost">Create new post </p>
        <hr color="	#DCDCDC"/>
        </div>
       <div id="PopUpFlex"> 
