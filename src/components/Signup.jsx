@@ -25,7 +25,7 @@ export const Signup = () =>{
             if(data.message=='User with that username already exists') {
                alert('User with that username already exists')
             } else {
-                alert('Account Successfuly created please sigin')
+                alert('Account Successfuly created please signin')
                nav('/')
             }
         }
