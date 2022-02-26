@@ -41,6 +41,7 @@ export const Login = () =>{
                  handle(true)
                  localStorage.setItem("Auth",true)
                  setloading(false)
+                 alert('Account Successfuly created please signin')
                  nav('/home')
 
                 //  setTimeout(()=>{

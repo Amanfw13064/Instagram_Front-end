@@ -1,6 +1,5 @@
 import React from "react";
 import "./Pro.css";
-import "./UploadPopup"
 import "./secNav.css"
 import { BsFillChatFill } from 'react-icons/bs';
 import { BsFillSuitHeartFill } from 'react-icons/bs';
