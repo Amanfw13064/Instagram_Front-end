@@ -73,7 +73,7 @@ const userData=JSON.parse(localStorage.getItem('user_data'))
          <Grid container>
            <Grid display="flex" item xs={8}>
               <Avatar className="suggested-avatar" src={e.profile_pic} />
-             <Link to={`userDiv/${e._id}`} ><div className="suggest-text">{e.name}</div></Link>
+             <Link id="no=dec" to={`userDiv/${e._id}`} ><div className="suggest-text">{e.name}</div></Link>
            </Grid>
            <Grid item xs={4}>
              <div onClick={()=>{

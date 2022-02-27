@@ -20,7 +20,7 @@
 }
 .userchat{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13.5px;
 }
 
 .arrow-img{
@@ -83,7 +83,7 @@
 
     /* border: 1px solid black; */
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     position: relative;
 }

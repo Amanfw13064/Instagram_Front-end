@@ -21,6 +21,10 @@ body {
 img {
   display: block;
 }
+#profile-img{
+  width: 150px;
+  height: 150px;
+}
 
 .container {
   max-width: 93.5rem;
