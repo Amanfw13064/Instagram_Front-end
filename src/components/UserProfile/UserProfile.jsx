@@ -13,6 +13,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import {Avatar} from "@mui/material"
 import {Navbar}  from "../Navbar/Navbar"
 
+
 //popup
 import  { useState,useEffect,useRef } from 'react';
 import  Popup from './PopUp';
@@ -24,7 +25,6 @@ import styled from 'styled-components';
 const Button = styled.button`
 border: none;
 background-color: transparent;
-
 `;
 export const ProfileFinal = () => {
     
@@ -192,7 +192,7 @@ const [edit,setEdit]=useState(false)
      content={<>
       
        <p className="fallowTitle">Following</p>
-       <div class="line"></div>
+       <div className="line"></div>
        {/* <hr color="#DCDCDC"/> */}
       
        <br/> 
@@ -212,7 +212,7 @@ const [edit,setEdit]=useState(false)
 
         </div>
         <div>
-            <button class="fallowBtn" onClick={()=>{
+            <button id="buttonfallow" class="fallowBtn" onClick={()=>{
               makeunfollow(e._id)
             }} >unfollow</button>
         </div>

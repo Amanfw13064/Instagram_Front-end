@@ -13,6 +13,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import {Navbar}  from "../Navbar/Navbar"
 import {useParams} from "react-router-dom"
 
+
 //popup
 import  { useState,useEffect,useRef } from 'react';
 import  Popup from './PopUp';
@@ -31,6 +32,8 @@ export const ProfileSuggest = () => {
   const [isOpenFallowing, setIsOpenFallowing] = useState(false);
   const [isOpenFallower, setIsOpenFallower] = useState(false);
   const [loading,setloading]=useState(true)
+
+  
 
   const {id} = useParams()
   console.log(id, "this is our id")
@@ -176,7 +179,7 @@ export const ProfileSuggest = () => {
 
         </div>
         <div>
-            <button class="fallowBtn"  >unfollow</button>
+            <button className="fallowBtn" id="buttonfallow">unfollow</button>
         </div>
     </div>
     ))}

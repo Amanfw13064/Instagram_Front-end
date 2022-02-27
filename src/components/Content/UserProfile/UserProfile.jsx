@@ -93,7 +93,7 @@ const ProfileFinal = () => {
          <p>Ruku</p>
          </div>
          <div>
-             <button class="fallowBtn">Fallow</button>
+             <button className="fallowBtn">Fallow</button>
          </div>
      </div>
      <div style={{display:"flex" ,justifyContent:"space-between" , margin:"1.3rem 0"}}>
