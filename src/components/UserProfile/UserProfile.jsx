@@ -10,6 +10,7 @@ import { BiUserPin } from "react-icons/bi";
 import axios from 'axios'
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
+import {Avatar} from "@mui/material"
 import {Navbar}  from "../Navbar/Navbar"
 
 //popup
@@ -115,11 +116,12 @@ const [edit,setEdit]=useState(false)
         <div className="container">
           <div className="profile">
             <div className="profile-image">
-              <img style={{width:"150px",height:"150px",borderRadius:"80px"}}
+             <Avatar id="profile-img" src={data.profile_pic}/>
+              {/* <img style={{width:"150px",height:"150px",borderRadius:"80px"}}
                 src={data.profile_pic}
                 alt=""
                
-              />
+              /> */}
             </div>
 
             <div className="profile-user-settings">
@@ -174,7 +176,7 @@ const [edit,setEdit]=useState(false)
 
        </div>
        <div>
-           <button className="fallowBtn">Fallow</button>
+           <button className="fallowBtn">Follower</button>
        </div>
    </div>
      ))}
