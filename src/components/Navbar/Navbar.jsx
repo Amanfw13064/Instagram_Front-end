@@ -1,5 +1,6 @@
-import React, {Component} from "react"
-
+import React, {Component, useState} from "react";
+import SettingsIcon from '@mui/icons-material/Settings';
+import ClassIcon from '@mui/icons-material/Class';
 import './Navbar.css'
 import {Grid} from "@mui/material"
 import insta_log from "../../images/logoinsta.png"
@@ -16,7 +17,7 @@ import {AuthProvider} from '../../Context/AuthContextProvider'
 
 
 export const Navbar=()=>{
-
+  const [showDropDown, setShowDropDown] = useState(false);
   const {Auth,handle}=useContext(AuthProvider)
   if(Auth=="false"){
     return <Navigate to='/' />
@@ -38,18 +39,35 @@ export const Navbar=()=>{
      <Grid item xs={3} style={{display:"flex"}}>
    <Link to="/home"><img className="navbar-img" src={home}  width="25px" /></Link>    
    <Link to ="/chats"> <img className="navbar-img" src={message}  width="25px" /></Link>   
+    <UploadPop/>
        <img className="navbar-img" src={find}  width="25px" />
      
-    <Link to ="/notification"> <img className="navbar-img" src={react}  width="25px" /></Link>  
-    <Link to ="/profile"> <Avatar className="navbar-img" style={{"maxWidth":"25px", "maxHeight":"25px"}} src="" /></Link>
-    <UploadPop/>
-
-    
-      <button className="log" onClick={()=>{
+    <Link to ="/notification"> <img className="navbar-img" src={react}  width="25px" /></Link>
+    <div>
+    <Avatar className="navbar-img" style={{"maxWidth":"25px", "maxHeight":"25px", cursor : "pointer"}} src="" onClick={() => setShowDropDown(!showDropDown)} />
+    <div id="drop-downDk" style={showDropDown ? {visibility : "visible" } : {visibility : "hidden"}}>
+    <Link to="/profile">
+    <div id="drop_downItem1">
+    <Avatar className="navbar-img" style={{"maxWidth":"18px", "maxHeight":"18px"}} src="" />
+    <p style={{marginTop : "6%"}}>Profile</p>
+    </div></Link>
+    <div id="drop_downItem3">
+    <ClassIcon style={{marginLeft:"5%"}}/>
+    <p style={{marginLeft:"4%"}}>Saved</p>
+    </div>
+    <Link to="/profile">
+    <div id="drop_downItem2">
+    <SettingsIcon style={{marginLeft:"5%"}}/>
+    <p style={{marginLeft:"4%"}}>Settings</p>
+    </div></Link>
+    <div id="drop_downItem4">
+    <p style={{marginLeft:"4%", marginTop : "2%"}} onClick={()=>{
         localStorage.setItem('Auth',false)
         window.location.reload(false);
-       
-      }}>logout</button>
+      }}>Log Out</p>
+    </div>
+    </div>
+    </div>  
      </Grid>
      <Grid item xs={2}></Grid>
   </Grid>   

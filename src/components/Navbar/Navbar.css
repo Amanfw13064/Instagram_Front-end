@@ -1,9 +1,8 @@
 .navbar_content{
-
     height: 54px;
     background-color: white;
-    border-bottom:1px solid #dbdbdb  ;
-   
+    border-bottom:1px solid #dbdbdb;
+
 }
 .insta-logo{
     margin-top: 10px;
@@ -34,4 +33,32 @@
     text-align: center;
     background-color: #fafafa;
     border-radius:5px ;
+}
+#drop-downDk{
+    border: 1px solid lightgray;
+    height: 140px;
+    width: 300%;
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#drop_downItem1{
+    display: flex;
+}
+#drop_downItem2{
+    display: flex;
+    margin-top: 4%;
+}
+#drop_downItem3{
+    display: flex;
+    margin-top: -1%;
+}
+#drop_downItem4{
+    border-top: 1px solid lightgray;
+    margin-top: 3%;
+}
+#drop-downDk > a{
+    color: black;
 }
