@@ -23,7 +23,9 @@
     height: 450px;
     /* border: 1px solid green; */
     overflow-y: auto;
+
     font-size: 15px;
+
     position: relative;
 
 }
@@ -83,8 +85,5 @@
 }
 .emoji-div-hide{
     display: hidden;
-}
-#Chats-adj{
-    margin: none;
-    padding: none;
+
 }

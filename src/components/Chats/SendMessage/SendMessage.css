@@ -11,7 +11,11 @@
 }
 #sent-msg-logo-div{
    width: 70%;
+
    margin-left: 35%;
+
+ 
+
    /* border: 1px solid green; */
    justify-content: center;
    text-align: center;
@@ -29,14 +33,18 @@
 
 #head{
     font-weight: lighter;
+
     font-size: 18.72px;
+
 
 }
 #para{
     color: rgb(142,142,171);
     
     font-size: 14px;
+
     padding: 10px;
+
 }
 #button-div{
     text-align: center;
@@ -50,5 +58,7 @@
     font-weight: bold;
     height: 30px;
     border: none;
+
     padding: 5px;
+
 }

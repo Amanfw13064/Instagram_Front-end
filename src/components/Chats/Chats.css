@@ -80,7 +80,11 @@
 /* SendMessage */
 
 .sendMsg{
+
     /* border: 1px solid black; */
+
+    border: 1px solid black;
+
     position: relative;
 }
 

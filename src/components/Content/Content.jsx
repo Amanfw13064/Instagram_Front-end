@@ -28,7 +28,9 @@ const Content = () => {
         </div>
       </Grid>
 
+
       <Grid id="suggestion-div" display ={rightmarg? "none":"block"} item xs={3}>
+
     
          <InfoSidebar />
         <Suggestion />
