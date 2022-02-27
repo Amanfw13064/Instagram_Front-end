@@ -402,3 +402,12 @@ color: #262626;
 
 
   }
+
+  #lineNav{
+    width: 60%;
+    height: 1.3px;
+    background-color: #cecece;
+    margin: auto;
+    margin-bottom: 1%;
+   
+  }

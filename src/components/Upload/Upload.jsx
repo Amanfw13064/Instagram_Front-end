@@ -4,7 +4,7 @@ import React, { useState} from "react";
 import "./UploadPopup.css"
 import Upload from "./UploadPopupBox";
 import Picker from 'emoji-picker-react';
-import { FaGrinAlt } from 'react-icons/fa';
+import { BsEmojiSmile } from 'react-icons/bs';
 // import { EmojisFn } from './EmojiFile';
 
 //import { EmojisFn } from './EmojiFile';
@@ -29,7 +29,7 @@ export const UploadPop =()=>{
     const handleEmoji = () => {
         setShowEmoji(!showEmoji);
     }
-    ///-------///////
+   
     const [text, setText] = useState("");
     const handleChange2 = (e) => {
         setText(e.target.value);
@@ -40,24 +40,24 @@ export const UploadPop =()=>{
     
  
   const [file, setFile] = useState("")
-  const [preview, setPreview] = useState("")
+  const [preview, setPreview] = useState("") 
   const handleChange = (event) => {
-    const selectedFile = event.target.files[0];
+    const selectedFile = event.target.files[0]; 
    // console.log(event.target.files)
     setFile(selectedFile)
-    const filePreview = URL.createObjectURL(selectedFile)
-    setPreview(filePreview)
+    const filePreview = URL.createObjectURL(selectedFile) 
+    setPreview(filePreview) 
   }
-let user_id=localStorage.getItem('user_id')
-const handleSubmit = () =>{
-  setloading(true)
-  var data=new FormData()
-  data.append('picture',file)
-  data.append('title',text)
-  data.append('user_id',user_id)
+let user_id=localStorage.getItem('user_id') 
+const handleSubmit = () =>{ 
+  setloading(true) 
+  var data=new FormData() 
+  data.append('picture',file) 
+  data.append('title',text) 
+  data.append('user_id',user_id) 
   fetch('https://instagrambackendd.herokuapp.com/post',{
-    method:"POST",
-    body:data,
+    method:"POST", 
+    body:data, 
   }).then(res=>res.json()).then(data=>{
     setloading(false)
     console.log(data)
@@ -91,7 +91,7 @@ const handleSubmit = () =>{
      <div style={{textAlign: "center"}}>
     
   
-    {file && <img src={preview} alt={file.name} style={{width:"100%", maxHeight:"65vh"}}/>}
+    {file && <img src={preview} alt={file.name} style={{width:"100%", maxHeight:"50vh"}}/>}
          <form  onSubmit={(e)=>{
            e.preventDefault()
           handleSubmit()  
@@ -130,21 +130,10 @@ const handleSubmit = () =>{
      <div style={{marginLeft:"1.3rem", fontSize:"20px", color:"grey"}}>
       {/* <BsEmojiSmile /> */}
       {/* <EmojisFn/> */}
-      <div id="textContainer">
-        <p> {text}{chosenEmoji ? chosenEmoji.map((e) => e.emoji) : null } </p>
-    </div>
+    
     <form onSubmit={handleSubmit2}>
-    <FaGrinAlt className='react-icons' onClick={handleEmoji} />
-    <input type="text" id="caption" placeholder={"Write a Caption..."} onChange={handleChange2}/>
-    <div className='emojiDiv' style={(showEmoji ? {visibility : "visible"} : {visibility : "hidden"})}>
-    <Picker onEmojiClick={onEmojiClick} />
-    </div>
-   
-    </form> 
-     </div>
 
-     <div>
-
+    <div> 
 <div>
 {/* <BiMap /> */}
   <input type="text" id="locationInp" placeholder="Add Location "/>
@@ -162,6 +151,24 @@ const handleSubmit = () =>{
 </select>
         </div>
      </div>
+
+     <div id="textContainer">
+        <p> {text}{chosenEmoji ? chosenEmoji.map((e) => e.emoji) : null } </p>
+    </div>
+    <BsEmojiSmile className='react-icons' onClick={handleEmoji} />
+    <input type="text" id="caption" placeholder={"Write a Caption..."} onChange={handleChange2}/>
+    
+  
+    
+    
+    <div className='emojiDiv' style={(showEmoji ? {visibility : "visible"} : {visibility : "hidden"})}>
+    <Picker onEmojiClick={onEmojiClick} />
+    </div>
+   
+    </form> 
+     </div>
+
+   
    
     
      </div>

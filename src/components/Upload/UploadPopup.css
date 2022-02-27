@@ -58,8 +58,9 @@
 #shareBtn {
   border: none;
   color: #0095f6;
-  background-color: transparent;
   margin-top: 5%;
+  background-color: transparent;
+  cursor: pointer;
 }
 /* #shareBtn {
   outline: none;
@@ -73,6 +74,7 @@
   padding: 0.5em 3em;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 /* 
 @media screen and (min-width: 1024px) {
@@ -88,6 +90,7 @@
 }
 #paddingDiv {
   padding: 15% 0;
+  
   /* border: 1px solid red; */
 }
 
@@ -96,7 +99,7 @@
   width: 100%;
   outline: none;
   border: none;
-  border-top: 1px solid rgb(212, 209, 209);
+  border-left: 1px solid rgb(212, 209, 209);
 }
 
 /* sroll bar */
@@ -129,4 +132,13 @@
   font-size: 16px;
   font-weight: 500;
   padding: 2%;
+}
+
+#textContainer{
+ padding-top: 5%;
+
+}
+
+.react-icons{
+  margin-top: 6%;
 }
