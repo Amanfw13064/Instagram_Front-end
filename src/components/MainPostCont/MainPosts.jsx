@@ -14,8 +14,8 @@ export const MainPosts=()=>{
        })
  }
    return <div>
-    {Post.map(e=>(
-       <Posts id={e._id} postedBy={e.postedBy} commentPost={e.comment} refresh={getPost} user_profile={e.user_id.profile_pic} userName={e.user_id.name} PostImageUrl={e.picture} likes={e.likes}/>
+    {Post.map((e, index)=>(
+       <Posts key={index} id={e._id} postedBy={e.postedBy} commentPost={e.comment} refresh={getPost} user_profile={e.user_id.profile_pic} userName={e.user_id.name} PostImageUrl={e.picture} likes={e.likes}/>
     ))}
   </div>
 }

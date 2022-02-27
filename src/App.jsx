@@ -3,7 +3,7 @@ import './App.css';
 import Home from "./components/Homepage/Homepage"
 import {Routes, Route} from "react-router-dom"
 
-import {Chats} from "./components/Chats/Chats"
+import Chats from "./components/Chats/Chats"
 import {Navbar} from "./components/Navbar/Navbar"
 
 // import Chats from "./components/Chats/Chats"

@@ -19,16 +19,52 @@
     margin:10px
 
 }
+#befor-like{
+    /* border: 1px solid red; */
+    color: rgb(71, 71, 71);
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+}
 
+#alr-befor-like{
+    /* border: 1px solid red; */
+    color: rgb(71, 71, 71);
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+}
+
+
+
+#after-like{
+    /* border: 1px solid red; */
+   
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+
+}
+
+#alr-after-like  {
+    
+    width: 35px;
+    height: 35px;
+    margin: 3px;
+
+
+
+}
 .post-username{
-    font-weight: bold;
+    font-weight:600;
     margin-top: 20px;
-    font-size: 17px;
+    font-size: 14px;
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;;
     
 }
 .Three-para{
-    width: 25px;
-    margin: 5px;
+    width: 30px;
+    margin: 9px;
 
 }
 
@@ -36,14 +72,89 @@
   
     margin: 10px;
    display: flex;
- 
+   border: 1px solid red;
 
 }
 .post-comment-input{
 height: 50px;
-width: 605px;
-border: 1px solid #dbdbdb;
+width: 70%;
+border:none;
 font-size: 16px;
 padding-left: 10px;
+margin-top: 2%;
 
+
+}
+
+
+.comment-user{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+    
+
+#com-2{
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: lighter;
+   
+}
+
+#comments{
+    /* border: 1px solid red; */
+     display: flex;
+     margin-top: 2%;
+}
+#emoji{
+    /* border: 1px solid green; */
+    width: 40px;
+    height: 75px;
+    width: 8%;
+    
+
+}
+#emoji-smile{
+    margin-top: 45%;
+
+}
+#input-comment{
+    /* border: 1px solid blue; */
+    width: 84%;
+    display: flex;
+
+}
+#post-btn{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:rgb(179,223,252);
+    font-weight: bold;
+    width: 8%;
+
+}
+#post-btn-tr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color:rgb(0,149,246);
+    font-weight: bold;
+    width: 8%;
+
+}
+input:focus {
+    outline:none;
+}
+.emoji-div-comment{
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    /* height: 120px; */
+    bottom: 0;
+    /* width: 120px; */
+    left: 0;
 }

@@ -21,6 +21,7 @@
     height: 450px;
     border: 1px solid green;
     overflow-y: auto;
+    position: relative;
 
 }
 
@@ -67,4 +68,16 @@
 .left{
     float: left;
     clear: both;
+}
+
+.emoji-div{
+    /* border: 1px solid red; */
+    position: absolute;
+    height: 120px;
+    bottom: 0;
+    width: 120px;
+    left: 0;
+}
+.emoji-div-hide{
+    display: hidden;
 }

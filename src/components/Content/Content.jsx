@@ -18,8 +18,8 @@ const Content = () => {
   console.log(isPageWide);
   return (
     <Grid container>
-      <Grid items xs={2}></Grid>
-      <Grid marginRight={IncMargin?"75px":"-52px"}items xs={6}>
+      <Grid item xs={2}></Grid>
+      <Grid marginRight={IncMargin?"75px":"-52px"}item xs={6}>
       
         <div>
           <Stories />
@@ -28,7 +28,7 @@ const Content = () => {
         </div>
       </Grid>
 
-      <Grid display ={rightmarg? "none":"block"} items xs={3}>
+      <Grid display ={rightmarg? "none":"block"} item xs={3}>
     
          <InfoSidebar />
         <Suggestion />
@@ -36,7 +36,7 @@ const Content = () => {
        
       </Grid>
 
-      <Grid items xs={1}></Grid>
+      <Grid item xs={1}></Grid>
     </Grid>
   );
 };

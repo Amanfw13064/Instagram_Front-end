@@ -1,0 +1,51 @@
+#msg-contu{
+    /* border: 1px solid red; */
+    position: absolute;
+    left :0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto ;
+    height: 50%;
+    width: 50%;
+}
+#sent-msg-logo-div{
+   width: 70%;
+   margin-left: 15%;
+   /* border: 1px solid green; */
+   justify-content: center;
+   text-align: center;
+}
+
+#sent-msg-logo{
+   
+    
+    width: 95px;
+    
+}
+#text-div-chat{
+    text-align: center;
+}
+
+#head{
+    font-weight: lighter;
+
+}
+#para{
+    color: rgb(142,142,171);
+    
+    font-size: 14px;
+}
+#button-div{
+    text-align: center;
+
+
+}
+#button-chat{
+    border-radius: 5px;
+    background-color: rgb(0,149,246);
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    border: none;
+}
