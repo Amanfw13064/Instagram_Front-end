@@ -5,19 +5,29 @@ import Checkbox from '@mui/material/Checkbox';
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 import { Grid } from "@mui/material";
-import share from '../../images/share.svg'
+import share from '../../images/sharefinal.png'
 import { red } from '@mui/material/colors';
+import smile from "../../images/smile.png"
 import axios from 'axios'
+import comm from "../../images/combold.png"
+import Picker from "emoji-picker-react"
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 export const Posts=({id,PostImageUrl,userName,likes,user_profile,refresh,commentPost,postedBy})=>{
    const [comment,setcomment]=useState('')
+   const [post,setPost]=useState(false)
   const user_id=localStorage.getItem('user_id')
- 
+  const [showPicker, setShowPicker]= useState(false);
+  
+ const onEmojiClick=(event,emojiObject)=>{
+   setcomment(prev=>prev + emojiObject.emoji)
+   setShowPicker(false)
+ }
+    
 console.log("profile",user_profile)
   const Makelikes=(postid)=>{
-       axios.patch(`http://localhost:5000/post/${postid}/likes`,{
+       axios.patch(`https://instagrambackendd.herokuapp.com/post/${postid}/likes`,{
          likes:user_id
        }).then(({data})=>{
 
@@ -25,14 +35,14 @@ console.log("profile",user_profile)
        })
   }
   const Makeunlikes=(postid)=>{
-    axios.patch(`http://localhost:5000/post/${postid}/unlikes`,{
+    axios.patch(`https://instagrambackendd.herokuapp.com/post/${postid}/unlikes`,{
       likes:user_id
     }).then(({data})=>{
       refresh()
     })
 }
   const Makecomment=(postid)=>{
-    axios.patch(`http://localhost:5000/post/${postid}/comment`,{
+    axios.patch(`https://instagrambackendd.herokuapp.com/post/${postid}/comment`,{
       comment:comment,
       postedBy:user_id
     }).then(({data})=>{
@@ -55,7 +65,8 @@ console.log("profile",user_profile)
 
          <div>
          <img
-            width="615px"
+            width="100%"
+            height="615px"
             src={PostImageUrl}
             alt=""
           />
@@ -88,7 +99,7 @@ console.log("profile",user_profile)
     '&.Mui-checked': {
       color: red[600],
     },'& .MuiSvgIcon-root': { fontSize: 28 }
-  }}  icon={<FavoriteBorder />} checkedIcon={<Favorite />} />:    <Checkbox onClick={()=>{
+  }}  icon={<FavoriteBorder id="befor-like" />} checkedIcon={<Favorite id="after-like" />} />:    <Checkbox onClick={()=>{
     if(lik===true){
       Makelikes(id)
     }
@@ -103,9 +114,9 @@ color: red[800],
 '&.Mui-checked': {
 color: red[600],
 },'& .MuiSvgIcon-root': { fontSize: 28 }
-}}  icon={<FavoriteBorder />} checkedIcon={<Favorite />} />}
+}}  icon={<FavoriteBorder  id="alr-befor-like"  />} checkedIcon={<Favorite  id="alr-after-like" />} />}
                
-               <img className="Three-para" src={comment} />
+               <img className="Three-para" src={comm} />
                 <img className="Three-para" src={share} />
               </Grid>
               <Grid item xs={4}></Grid>
@@ -121,18 +132,51 @@ color: red[600],
          {/* Comments section */}
         { 
         postedBy.map((e,i)=>(
-             <div className="post-comment" ><Avatar className="post-userlogo" src={e.profile_pic} /><h3 style={{marginTop:"20px",color:"blue"}}>{e.name}</h3> <h3 style={{margin:"20px"}}>{commentPost[i]}</h3></div>    
+             <div key ={i} className="post-comment" >
+
+             <Avatar width="5px" height="5px" marginTop="20px" className="post-userlogo" src={e.profile_pic} />
+             <h3 className="comment-user" style={{marginTop:"20px"}}>{e.name}</h3>
+              <h3 id="com-2"  style={{marginTop:"20px"}} >{commentPost[i]}</h3>
+              
+              </div>    
         )
         )}    
-            <input className="post-comment-input" onChange={(e)=>{
+
+            <div  className={showPicker? "emoji-div-comment":"emoji-div-hide" } > {showPicker && <div>
+                       
+                       <Picker width="60%" height="50%"
+           onEmojiClick={onEmojiClick}
+         />
+                   
+                   </div> }</div>
+
+         <div id="comments">
+
+           <div id="emoji">
+           
+             <img onClick={()=>setShowPicker(val => !val)} id="emoji-smile"  className="chat-input-logo"  src={smile} alt="" />
+           </div>
+
+           <div id="input-comment">
+                <input value={comment}   className="post-comment-input" onChange={(e)=>{
               if(e.key==="Enter"){
                 console.log("dfdfd")
               }
+              setPost(true)
               setcomment(e.target.value)
             }} type="text" placeholder="Add a comment.." />
-          <input type="submit" onClick={()=>{
+        
+           
+           </div>
+
+           <div id= {post?"post-btn-tr":"post-btn"}>
+             <div  onClick={()=>{
             Makecomment(id)
-          }}></input>
+          }}>Post</div>
+           
+           </div>
+        </div>
+       
         
         </div>
       </div>

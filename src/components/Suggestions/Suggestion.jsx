@@ -66,9 +66,9 @@ const userData=JSON.parse(localStorage.getItem('user_data'))
   
   </Grid>   
   <div className="suggestions-list">     
-    {ref.current.arr.map(e=>(
+    {ref.current.arr.map((e,index)=>(
       
-       <div className="suggestion-avtx">
+       <div key={index} className="suggestion-avtx">
          <Grid container>
            <Grid display="flex" item xs={6}>
              <Avatar className="suggested-avatar" src={e.profile_pic} />
