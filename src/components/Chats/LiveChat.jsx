@@ -26,7 +26,7 @@ export const LiveChat=({value})=>{
  
 
   useEffect(() => {
-    socketRef.current = io.connect('http://localhost:8000');
+    socketRef.current = io.connect('https://livechatmessage.herokuapp.com/');
 
     socketRef.current.on("your id", id => {
       setYourID(id);
