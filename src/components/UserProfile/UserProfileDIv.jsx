@@ -11,6 +11,7 @@ import axios from 'axios'
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 import {Navbar}  from "../Navbar/Navbar"
+import {useParams} from "react-router-dom"
 
 //popup
 import  { useState,useEffect,useRef } from 'react';
@@ -25,11 +26,14 @@ border: none;
 background-color: transparent;
 
 `;
-export const ProfileFinal = () => {
+export const ProfileSuggest = () => {
     
   const [isOpenFallowing, setIsOpenFallowing] = useState(false);
   const [isOpenFallower, setIsOpenFallower] = useState(false);
   const [loading,setloading]=useState(true)
+
+  const {id} = useParams()
+  console.log(id, "this is our id")
    const ref=useRef()
   const toggleFollowers = () => {
     setIsOpenFallower(!isOpenFallower);
@@ -43,7 +47,7 @@ export const ProfileFinal = () => {
   },[])
   
      const getData=()=>{
-      axios.get(`https://instagrambackendd.herokuapp.com/user/${user_id}`).then(({data})=>{
+      axios.get(`https://instagrambackendd.herokuapp.com/user/${id}`).then(({data})=>{
         setdata(data)
        
       }) 
@@ -62,47 +66,15 @@ export const ProfileFinal = () => {
         console.log("use",ref.current)   
     }) 
   }
-  const makeunfollow=(_id)=>{
-    axios.patch(`https://instagrambackendd.herokuapp.com/user/${user_id}/unfollowing`,{
-      following:_id
-    }).then(({data})=>{
-      console.log(data)
-    })
-    axios.patch(`https://instagrambackendd.herokuapp.com/user/${_id}/unfollower`,{
-      follower:user_id
-    }).then(({data})=>{
-      console.log(data)
-     
-    })
- }
+  
   const timeout=()=>{
    setTimeout(()=>{
       setloading(false)
    },2000)
   }
 
-const [edit,setEdit]=useState(false)
-  const Choose=(e)=>{
-    setloading(true)
-     let profile_pic=e.target.files[0]
-     var data=new FormData()
-     data.append('profile_pic',profile_pic)
-     fetch(`https://instagrambackendd.herokuapp.com/user/${user_id}/profile`,{
-       method:"PATCH",
-       body:data,
-     }).then(res=>res.json()).then(data=>{
-       getData()
-       setloading(false)
-       setEdit(false)
-  
-     }).catch(err=>{
-       console.log(err)
-       setloading(false)
-       setEdit(false)
-     })
-    
-  }
-  
+
+
   const toggleFollowing = () => {
     setIsOpenFallowing(!isOpenFallowing);
   } 
@@ -125,13 +97,7 @@ const [edit,setEdit]=useState(false)
             <div className="profile-user-settings">
               <h1 className="profile-user-name">{data.username}</h1>
 
-             <button className="btn profile-edit-btn" onClick={()=>{
-                  setEdit(true)
-              }}>Edit Profile</button>
-             {edit? <input style={{marginLeft:"5px"}} onChange={(e)=>{
-               Choose(e)
-             }} type="file" placeholder="Edit Profile"/>:""}
-
+             
               <button
                 className="btn profile-settings-btn"
                 aria-label="profile settings"
@@ -174,7 +140,7 @@ const [edit,setEdit]=useState(false)
 
        </div>
        <div>
-           <button className="fallowBtn">Follower</button>
+           <button className="fallowBtn">Follow</button>
        </div>
    </div>
      ))}
@@ -210,9 +176,7 @@ const [edit,setEdit]=useState(false)
 
         </div>
         <div>
-            <button class="fallowBtn" onClick={()=>{
-              makeunfollow(e._id)
-            }} >unfollow</button>
+            <button class="fallowBtn"  >unfollow</button>
         </div>
     </div>
     ))}
@@ -287,4 +251,4 @@ const [edit,setEdit]=useState(false)
   );
 };
 
-export default ProfileFinal;
+

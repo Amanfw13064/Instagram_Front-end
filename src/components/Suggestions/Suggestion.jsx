@@ -4,6 +4,7 @@ import { Avatar, Grid } from "@mui/material";
 import axios from 'axios'
 import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
+import {Link} from "react-router-dom"
 
 
 export const Suggestion=()=>{
@@ -71,8 +72,8 @@ const userData=JSON.parse(localStorage.getItem('user_data'))
        <div key={index} className="suggestion-avtx">
          <Grid container>
            <Grid display="flex" item xs={8}>
-             <Avatar className="suggested-avatar" src={e.profile_pic} />
-             <div className="suggest-text">{e.name}</div>
+              <Avatar className="suggested-avatar" src={e.profile_pic} />
+             <Link to={`userDiv/${e._id}`} ><div className="suggest-text">{e.name}</div></Link>
            </Grid>
            <Grid item xs={4}>
              <div onClick={()=>{
