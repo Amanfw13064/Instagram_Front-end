@@ -7,6 +7,7 @@ import note from "../../images/notepad.png"
 import "./Chats.css"
 import {LiveChat} from "./LiveChat"
 import {SendMessage} from './SendMessage/SendMessage'
+import {Navbar}  from "../Navbar/Navbar"
 export const Chats=()=>{
   const [UserData, setUserData]= useState([])
    const [ShowChats, setShowChats]= useState(false)
@@ -20,6 +21,7 @@ export const Chats=()=>{
   let user=JSON.parse(localStorage.getItem('UserD'))
   const userData=JSON.parse(localStorage.getItem('user_data'))
   return <div id="Chats-adj">
+   <Navbar/>
   <Grid marginTop="25px"  height="600px"container>
     <Grid  item xs={2}></Grid>
     <Grid className="chat-conatiner" display="flex" item xs={8} >
