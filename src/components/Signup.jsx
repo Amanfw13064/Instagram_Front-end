@@ -58,8 +58,11 @@ export const Signup = () =>{
             </div>
             <div id="container_3_3">
                 <p>Get the app.</p>
-                <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"/>
-                <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"/>
+                <div>
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"/>
+                    <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"/>
+                </div>
+                
             </div>
         </div>
         <div id="footer">
