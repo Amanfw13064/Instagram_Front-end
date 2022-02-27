@@ -6,7 +6,7 @@
 ## [Video Presentation ](https://youtu.be/i6cz8IRRaZ8)
 --- -->
 
-## <!-- ## [Blog Link](https://purpllecloneteam.blogspot.com/2021/12/purplle-website-clone.html) -->
+##  [Blog Link](https://medium.com/@mayuriwasu2000/instagram-clone-59d65f203fb1)
 
 ## Tech Stack
 
@@ -21,13 +21,19 @@
 - `MongoDB`
 - `Express`
 - `Node`
+- `WebSocket`
 
-<!-- ---
+---
 ## Features
-##### - User can post photo.
-##### - They can use this website from any device.
-##### - They can fallow unfallow other users.
-##### - They can like and comment on other users profile.
+##### - Features
+##### Users can share images with their audience.
+##### They can follow or unfollow other users
+##### They can like, unlike, and comment on other users’ posts.
+##### They can edit their own profile.
+##### They can chat with other users.
+##### They can like and comment on other users posts.
+##### On the profile page, they can see the count of followers and following of their own profile and other’s profile as well.
+
 ---
 ## Page and Responsibilities
 ---
@@ -60,7 +66,7 @@
 ##### From here user can with other user
 ![Cart Page]()
 
---- -->
+---
 
 <!--
 ### How To Use
