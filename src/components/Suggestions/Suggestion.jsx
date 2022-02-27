@@ -70,11 +70,11 @@ const userData=JSON.parse(localStorage.getItem('user_data'))
       
        <div key={index} className="suggestion-avtx">
          <Grid container>
-           <Grid display="flex" item xs={6}>
+           <Grid display="flex" item xs={8}>
              <Avatar className="suggested-avatar" src={e.profile_pic} />
              <div className="suggest-text">{e.name}</div>
            </Grid>
-           <Grid item xs={6}>
+           <Grid item xs={4}>
              <div onClick={()=>{
                    makefollow(e._id)
              }} className="follow-text ">Follow</div>
