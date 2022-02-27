@@ -172,6 +172,7 @@ color: red[600],
            <div id= {post?"post-btn-tr":"post-btn"}>
              <div  onClick={()=>{
             Makecomment(id)
+            setcomment('')
           }}>Post</div>
            
            </div>
