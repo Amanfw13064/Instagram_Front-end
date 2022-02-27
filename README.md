@@ -1,31 +1,28 @@
+  <h2 align="center">   <img src="https://w0.peakpx.com/wallpaper/632/296/HD-wallpaper-instagram-black-comic-comics-community-dell-social-switch.jpg" width="50">  </h2>
+
 # Instagram Clone
 
 `Instagram is a free photo and video sharing website. People can upload photos or videos and share them with their followers or with a selected group of friends. They can also view, comment and like posts shared by their friends on Instagram.`
 
-<!-- ---
-## [Video Presentation ](https://youtu.be/i6cz8IRRaZ8)
---- -->
+---
+## [Demo](https://instagram-mern-clone.netlify.app/) 🔗
+---
 
-##  [Blog Link](https://medium.com/@mayuriwasu2000/instagram-clone-59d65f203fb1)
+##  [Blog Link](https://medium.com/@mayuriwasu2000/instagram-clone-59d65f203fb1)  🔗
 
-## Tech Stack
+## Tech Stack :wrench:
 
 #### Client:
 
-- `React`
-- `Redux`
-- `Material UI`
+- `React`, `Redux`, `Material UI`
 
 #### Server:
 
-- `MongoDB`
-- `Express`
-- `Node`
-- `WebSocket`
+- `MongoDB`, `Express`, `Node`, `WebSocket`
 
 ---
-## Features
-##### - Features
+## Features  :heavy_plus_sign:
+
 ##### Users can share images with their audience.
 ##### They can follow or unfollow other users
 ##### They can like, unlike, and comment on other users’ posts.
@@ -63,7 +60,7 @@
 
 ---
 - **Messaging Page**
-##### From here user can with other user
+##### From here user can chat with other user
 ![Cart Page](https://github.com/Amanfw13064/Instagram_Front-end/blob/main/public/imagesREADME/chat.png)
 
 ---
@@ -79,14 +76,14 @@ They can place an order by simply clicking on the place order button after that 
 
  -->
 
-## Creators
+## Creators :handshake:
 
-#### Aman [GitHub](https://github.com/Amanfw13064)
+#### Aman [GitHub](https://github.com/Amanfw13064) 	:octocat:
 
-#### Rishabh [GitHub](https://github.com/rishu11081998)
+#### Rishabh [GitHub](https://github.com/rishu11081998) 	:octocat:
 
-#### Mayuri [GitHub](https://github.com/mayuriwasu1)
+#### Mayuri [GitHub](https://github.com/mayuriwasu1) 	:octocat:
 
-#### Durgesh [GitHub](https://github.com/Durgesh2601)
+#### Durgesh [GitHub](https://github.com/Durgesh2601) 	:octocat:
 
-#### Faizan [GitHub](https://github.com/faazah)
+#### Faizan [GitHub](https://github.com/faazah) 	:octocat:
