@@ -1,14 +1,14 @@
-  <h2 align="center">   <img src="https://w0.peakpx.com/wallpaper/632/296/HD-wallpaper-instagram-black-comic-comics-community-dell-social-switch.jpg" width="50">  </h2>
+  <h2 align="center">   <img src="https://w0.peakpx.com/wallpaper/632/296/HD-wallpaper-instagram-black-comic-comics-community-dell-social-switch.jpg" width="70">  </h2>
 
 # Instagram Clone
 
 `Instagram is a free photo and video sharing website. People can upload photos or videos and share them with their followers or with a selected group of friends. They can also view, comment and like posts shared by their friends on Instagram.`
 
 ---
-## [Demo](https://instagram-mern-clone.netlify.app/) 🔗
+## [Demo](https://instagram-mern-clone.netlify.app/)
 ---
 
-##  [Blog Link](https://medium.com/@mayuriwasu2000/instagram-clone-59d65f203fb1)  🔗
+##  [Blog Link](https://medium.com/@mayuriwasu2000/instagram-clone-59d65f203fb1) 
 
 ## Tech Stack :wrench:
 
@@ -23,13 +23,13 @@
 ---
 ## Features  :heavy_plus_sign:
 
-##### Users can share images with their audience.
-##### They can follow or unfollow other users
-##### They can like, unlike, and comment on other users’ posts.
-##### They can edit their own profile.
-##### They can chat with other users.
-##### They can like and comment on other users posts.
-##### On the profile page, they can see the count of followers and following of their own profile and other’s profile as well.
+- Users can share images with their audience.
+- They can follow or unfollow other users
+- They can like, unlike, and comment on other users’ posts.
+- They can edit their own profile.
+- They can chat with other users.
+- They can like and comment on other users posts.
+- On the profile page, they can see the count of followers and following of their own profile and other’s profile as well.
 
 ---
 ## Page and Responsibilities
