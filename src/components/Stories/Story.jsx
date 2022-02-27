@@ -11,7 +11,12 @@ export const Stories=()=>{
        localStorage.setItem('user_data',JSON.stringify(data))
    })
   })
-  return  <div className="story-section">
+  return (
+
+  <div>
+  
+     
+      <div className="story-section">
   {
       data.map((e,i)=>(
            <div key ={i} className= "story-div">
@@ -21,5 +26,14 @@ export const Stories=()=>{
   }
   
   </div>
+  
+  
+  </div>
+
+
+
+  )
+  
+ 
 }
 

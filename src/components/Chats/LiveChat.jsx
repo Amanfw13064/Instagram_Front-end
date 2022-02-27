@@ -91,7 +91,7 @@ export const LiveChat=({value})=>{
               
                <Grid item xs={1}>
                
-                 <Avatar src= {value.imageUrl} className="chat-header-logo" />
+                 <Avatar src= {value.profile_pic} className="chat-header-logo" />
                </Grid>
                <Grid item xs={9} >
                   <div className="chat-header-username">{value.username}</div> 

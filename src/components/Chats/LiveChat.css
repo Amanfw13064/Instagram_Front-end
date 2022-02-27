@@ -15,18 +15,21 @@
 .chat-header-username{
     margin: 18px;
     font-weight: bold;
+    font-size: 15px;
+
 
 }
 .real-time-chatbox{
     height: 450px;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     overflow-y: auto;
+    font-size: 15px;
     position: relative;
 
 }
 
 .live-chat-input{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     height: 100px;
 }
 
@@ -80,4 +83,8 @@
 }
 .emoji-div-hide{
     display: hidden;
+}
+#Chats-adj{
+    margin: none;
+    padding: none;
 }

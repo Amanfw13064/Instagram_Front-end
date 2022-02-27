@@ -75,9 +75,9 @@ const userData=JSON.parse(localStorage.getItem('user_data'))
              <div className="suggest-text">{e.name}</div>
            </Grid>
            <Grid item xs={6}>
-             <div className="follow-text"><button className="folo" onClick={()=>{
+             <div onClick={()=>{
                    makefollow(e._id)
-             }}>Follow</button></div>
+             }} className="follow-text ">Follow</div>
            </Grid>
          </Grid>
        </div>

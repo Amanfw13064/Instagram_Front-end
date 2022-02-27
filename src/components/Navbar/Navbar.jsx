@@ -43,6 +43,8 @@ export const Navbar=()=>{
     <Link to ="/notification"> <img className="navbar-img" src={react}  width="25px" /></Link>  
     <Link to ="/profile"> <Avatar className="navbar-img" style={{"maxWidth":"25px", "maxHeight":"25px"}} src="" /></Link>
     <UploadPop/>
+
+    
       <button className="log" onClick={()=>{
         localStorage.setItem('Auth',false)
         window.location.reload(false);

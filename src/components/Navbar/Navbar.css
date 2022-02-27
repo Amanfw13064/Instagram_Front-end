@@ -17,6 +17,14 @@
     border: none;
     margin: 10px;
 }
+#logout-div{
+    border: 1px solid red;
+    text-align: center;
+    height: 45px;
+    
+    position: relative;
+
+}
 
 .nav-searchbar{
     height:30px;

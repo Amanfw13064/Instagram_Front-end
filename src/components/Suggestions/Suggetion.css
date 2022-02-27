@@ -49,12 +49,14 @@
 .suggest-text{
     font-weight: bold;
     margin: 7px;
-    font-size: 14px;
+    font-size: 13px;
 
 }
 .follow-text{
     font-weight: bold;
-    color: blue;
+    color: rgb(0,149,246);
     margin: 7px;
     text-align: end;
+    font-size: 12px;
+    cursor: pointer;
 }
