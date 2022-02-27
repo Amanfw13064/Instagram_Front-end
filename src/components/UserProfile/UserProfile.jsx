@@ -176,7 +176,7 @@ const [edit,setEdit]=useState(false)
 
        </div>
        <div>
-           <button className="fallowBtn">Fallow</button>
+           <button className="fallowBtn">Follower</button>
        </div>
    </div>
      ))}
