@@ -36,6 +36,7 @@ body {
   width: 180px;
   height: 70px;
   margin-top: 20px;
+  margin-left: 23%;
 }
 #fbBtn {
   background-color: #0095f6;
@@ -59,15 +60,15 @@ body {
   border: 1px solid gainsboro;
 }
 /* #container_2_1 button {
-    width: 270px;
-    height: 30px;
-    margin-bottom: 15px;
-    margin-top: 8px;
-    background-color: #b2dffc;
-    border: none;
-    color: white;
-    font-weight: 600;
-  } */
+      width: 270px;
+      height: 30px;
+      margin-bottom: 15px;
+      margin-top: 8px;
+      background-color: #b2dffc;
+      border: none;
+      color: white;
+      font-weight: 600;
+    } */
 #signupBtn {
   width: 90%;
   height: 30px;
@@ -102,13 +103,21 @@ body {
 
 #container_3_2 p {
   margin-top: 10px;
+  font-size: 13px;
 }
 #container_3_2 h5 {
   color: #48b5f9;
+  font-size: 13px;
 }
 
 #container_3_3 p {
   margin-top: 10px;
+  font-size: 13px;
+}
+
+#container_3_3 > div {
+  display: flex;
+  justify-content: space-around;
 }
 
 #container_3_3 img {
@@ -130,12 +139,12 @@ body {
   line-height: 25px;
   white-space: pre;
 }
-#signupP1{
+#signupP1 {
   margin-left: 52%;
 }
-#signupP2{
+#signupP2 {
   margin-left: 70%;
 }
-a{
+a {
   text-decoration: none;
 }
