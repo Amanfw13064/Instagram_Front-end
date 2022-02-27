@@ -12,6 +12,7 @@
 .box {
   position: relative;
   width: 26%;
+  height: 50vh;
   margin: 0 auto;
   height: auto;
   max-height: 50vh;
@@ -64,14 +65,7 @@
   margin: 3% auto;
   background-color: #cecece;
   }
-  #lineNav{
-    width: 67%;
-    height: 1.3px;
-    background-color: #cecece;
-    margin: auto;
-    margin-bottom: 1%;
-   
-  }
+
   .username{
    font-size: 13px;
    color: #585858;
