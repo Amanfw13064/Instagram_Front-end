@@ -56,7 +56,7 @@ export const ProfileSuggest = () => {
   const getPost=()=>{
     axios.get('https://instagrambackendd.herokuapp.com/post').then(({data})=>{
          for(let i=0;i<data.length;i++){
-               if(data[i].user_id._id===user_id){
+               if(data[i].user_id._id===id){
                 user_post.push(data[i])
                }
          }
