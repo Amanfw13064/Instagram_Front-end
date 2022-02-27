@@ -38,33 +38,33 @@
 ## Page and Responsibilities
 ---
 
+
 - **login-In Page**
-##### here is the landing page of Instagram
-![Landing Page]()
+
+![Landing Page](https://github.com/Amanfw13064/Instagram_Front-end/blob/main/public/imagesREADME/login.png)
 
 ---
-
 - **Home page**
-
-![Sign In Page]()
-
+##### here is the landing page of Instagram
+![Sign In Page](https://github.com/Amanfw13064/Instagram_Front-end/blob/main/public/imagesREADME/home.png)
 
 ---
+
 
 - **User Profile Page**
 ##### Users Posts
-![Profile Page]()
+![Profile Page](https://github.com/Amanfw13064/Instagram_Front-end/blob/main/public/imagesREADME/profile.png)
 
 ---
 
 - **Photo Upload**
 ##### Here User can post photo
-![Product Details Page]()
+![Product Details Page](https://github.com/Amanfw13064/Instagram_Front-end/blob/main/public/imagesREADME/upload.png)
 
 ---
 - **Messaging Page**
 ##### From here user can with other user
-![Cart Page]()
+![Cart Page](https://github.com/Amanfw13064/Instagram_Front-end/blob/main/public/imagesREADME/chat.png)
 
 ---
 
