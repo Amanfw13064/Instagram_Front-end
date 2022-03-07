@@ -1,4 +1,4 @@
-import React, {Component, useState} from "react";
+import React, { useState} from "react";
 import SettingsIcon from '@mui/icons-material/Settings';
 import ClassIcon from '@mui/icons-material/Class';
 import './Navbar.css'
@@ -8,7 +8,7 @@ import home from "../../images/home.svg"
 import message from "../../images/message.svg"
 import react from "../../images/love.svg"
 import find from '../../images/find.svg'
-import Vish from '../../images/IMG-20200405-WA0131.jpg'
+//import Vish from '../../images/IMG-20200405-WA0131.jpg'
 import {Avatar} from "@mui/material"
 import{Link,Navigate}  from "react-router-dom"
 import {UploadPop} from '../Upload/Upload'
