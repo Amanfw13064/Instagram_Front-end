@@ -6,6 +6,7 @@
 
 ---
 ## [Demo](https://insagram-mern.netlify.app)
+## [Video Demo](https://drive.google.com/file/d/1DSwj8uaLkjdZzjTupv-8VNM8bRZTUWdn/view?usp=sharing)
 ---
 
 ##  [Blog Link](https://medium.com/@mayuriwasu2000/instagram-clone-59d65f203fb1) 
