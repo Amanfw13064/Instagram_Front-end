@@ -14,7 +14,7 @@
 
 #### Client:
 
-- `React`, `Redux`, `Material UI`
+- `React`, `Material UI`
 
 #### Server:
 
